@@ -1,0 +1,93 @@
+.hidden {
+    display: none;
+}
+
+body {
+    height: 100%;
+    width: 75%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(160, 224, 160)
+}
+
+.computer-player-section {
+    text-align: center;
+    height: 100%;
+    width: 24%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border-left: solid;
+    display: flex;
+    flex-direction:column;
+    font-size: 30px;
+   
+    
+}
+
+main {
+    text-align: center;
+    height: 100%;
+    width: 24%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 38%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    align-items: center;
+
+}
+.me-player-section {
+    text-align: center;
+    height: 100%;
+    width: 24%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-right: solid;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    
+}
+  .rock-paper-scissors {
+    font-size:xx-large;
+  }
+  button {
+        background-color: #0b0b0b; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 75px;
+      }
+   
+  .game-board {
+    height: 420px;
+    width: 420px;
+    background-color: whitesmoke;
+    margin-top: 50px;
+  }
+  .anime-icon {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 50px;
+    margin-left: 3px; 
+    margin-top: 50%;
+  }
+  .robot-icon {
+    height: 250px;
+    width: 250px;
+    margin-left: 301px; 
+    margin-top: 38%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right:175;
+  }
