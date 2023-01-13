@@ -22,6 +22,7 @@ body {
     flex-direction:column;
     font-size: 30px;
    
+   
     
 }
 
@@ -51,6 +52,8 @@ main {
     display: flex;
     flex-direction: column;
     font-size: 30px;
+   
+    
     
 }
   .rock-paper-scissors {
@@ -71,7 +74,7 @@ main {
   .game-board {
     height: 420px;
     width: 420px;
-    background-color: whitesmoke;
+    /* background-color: rgb(147, 150, 153); */
     margin-top: 50px;
   }
   .anime-icon {
@@ -86,6 +89,56 @@ main {
     width: 250px;
     margin-left: 301px; 
     margin-top: 38%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right:175;
+  }
+  .rock-icon {
+    height: 170px;
+    width: 170px;
+    margin-left: -251px; 
+    margin-top: 11%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right:175;
+  }
+  .scissors-icon {
+    height: 150px;
+    width: 150px;
+    margin-left: 108px; 
+    margin-top: 12%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right:175;
+  }
+  .paper-icon {
+    height: 140px;
+    width: 140px;
+    margin-left: -59px; 
+    margin-top: 13%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right:175;
+  }
+  .raygun-icon {
+    height: 160px;
+    width: 160px;
+    margin-left: 16px; 
+    margin-top: 28%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right:175;
+  }
+  .lightsaber-icon {
+    height: 150px;
+    width: 150px;
+    margin-left: -170px; 
+    margin-top: 28%;
     position: fixed;
     z-index: 5;
     top: 0;
