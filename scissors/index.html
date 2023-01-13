@@ -8,31 +8,35 @@
   </head>
   <body>
   <aside>
-    <section class="me-player-section">Player</section>
-   <img class="anime-icon" src="icons/pngfind.com-anime-guy-png-1692765.png"  alt="anime-guy">
+    <section class="me-player-section">Human</section>
+     <img class="anime-icon" src="icons/pngfind.com-anime-guy-png-1692765.png"  alt="anime-guy">
+    <label class="human-score">0</label>
     </aside>
     <main>
       <section class="rock-paper-scissors">Rock, Paper, Scissors</section>
        <div class="game-board" id="game-box">
-        <img class="rock-icon" src="icons/pngfind.com-rubble-png-238696.png"  alt="rock">
-        <img class="scissors-icon" src="icons/pngfind.com-scissors-png-562066.png"  alt="scissors">
-        <img class="paper-icon" src="icons/pngfind.com-lined-paper-png-253691.png"  alt="paper">
-        <img class="raygun-icon" src="icons/pngfind.com-ray-gun-png-810359.png"  alt="raygun">
-        <img class="lightsaber-icon" src="icons/pngfind.com-light-saber-png-170023.png"  alt="saber">
+        <img class="rock-icon hidden" id="rock" src="icons/pngfind.com-rubble-png-238696.png"  alt="rock">
+        <img class="scissors-icon hidden" id="scissors" src="icons/pngfind.com-scissors-png-562066.png"  alt="scissors">
+        <img class="paper-icon hidden" id="paper" src="icons/pngfind.com-lined-paper-png-253691.png"  alt="paper">
+        <img class="raygun-icon hidden" id="raygun" src="icons/pngfind.com-ray-gun-png-810359.png"  alt="raygun">
+        <img class="lightsaber-icon hidden" id="lightsaber" src="icons/pngfind.com-light-saber-png-170023.png"  alt="saber">
        </div>
        <section class="buttons">
-        <button id="Classic">Classic</button>
-        <button id="Difficult">Difficult</button>
-    </section>
-    <section>
+        <button id="classic">Classic</button>
+        <button id="difficult">Difficult</button>
+       </section>
+       <section>
+        <button class="change-game-button hidden" id="change-game">Change Game</button>
+       </section>
         <aside>
           <section class="computer-player-section">Computer</section>
-         <img class="robot-icon" src="icons/pngfind.com-cute-robot-png-4637226.png"  alt="anime-robot">
+           <img class="robot-icon" src="icons/pngfind.com-cute-robot-png-4637226.png"  alt="anime-robot">
+           <label class="computer-score">0</label>
         </aside> 
      </main>
     </section>
-    <script type="text/javascript" src=""></script>
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript" src="player.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
