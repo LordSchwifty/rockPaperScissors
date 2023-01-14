@@ -7,7 +7,9 @@ var rockIcon = document.getElementById('rock')
 var paperIcon = document.getElementById('paper')
 var raygunIcon = document.getElementById('raygun')
 var lightsaberIcon = document.getElementById('lightsaber')
-var currentGame = new Game
+var currentGame = new Game()
+var humanScore = document.querySelector('.human-score')
+var computerScore = document.querySelector('.computer-score')
 //event listeners
 classicBtn.addEventListener('click', classicGameSelection)
 difficultBtn.addEventListener('click', difficultGameSelection)
@@ -54,4 +56,9 @@ function chooseIcon(event){
    currentGame.human.takeTurn(event)
    console.log(event.target.id)
    currentGame.standoff()
+   updateScore()
+}
+function updateScore() {
+    computerScore.innerText = currentGame.computer.wins
+    humanScore.innerText = currentGame.human.wins
 }
