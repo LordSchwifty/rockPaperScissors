@@ -59,18 +59,42 @@ main {
   .rock-paper-scissors {
     font-size:xx-large;
   }
-  button {
-        background-color: #0b0b0b; 
+  .buttons {
         border: none;
         color: white;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
         font-size: 16px;
         margin-top: 75px;
+        display:flex;
+        justify-content: column;
       }
-   
+  #classic {
+    height: 70px;
+    width: 120px;
+    color: white;
+    background-color:black;
+    font-size: 20px;
+    border-radius: 12px;
+  }
+  #difficult {
+    height: 70px;
+    width: 120px;
+    color: white;
+    background-color:black;
+    font-size: 20px;
+    border-radius: 12px;
+  }
+  #change-game {
+    height: 70px;
+    width: 120px;
+    color: white;
+    background-color:black;
+    font-size: 20px;
+    border-radius: 12px;
+  }
+
   .game-board {
     height: 420px;
     width: 420px;
@@ -144,3 +168,23 @@ main {
     top: 0;
     right:175;
   }
+
+  .human-score {
+    margin-left: -205px; 
+    margin-top: 1%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    font-size: 250px;
+  }
+  .computer-score {
+    height: 150px;
+    width: 150px;
+    margin-left: 360px; 
+    margin-top: 1%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    font-size: 250px;
+  }
+
