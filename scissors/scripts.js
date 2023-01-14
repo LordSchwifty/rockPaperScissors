@@ -28,7 +28,7 @@ function classicGameSelection(event) {
     difficultBtn.classList.add('hidden');
     currentGame.selectGameType(event);
 }
-function difficultGameSelection() {
+function difficultGameSelection(event) {
     changeGameBtn.classList.remove('hidden');
     scissorsIcon.classList.remove('hidden');
     rockIcon.classList.remove('hidden');
@@ -37,6 +37,7 @@ function difficultGameSelection() {
     raygunIcon.classList.remove('hidden')
     classicBtn.classList.add('hidden');
     difficultBtn.classList.add('hidden');
+    currentGame.selectGameType(event);
 }
 function changeGame() {
     changeGameBtn.classList.add('hidden');
@@ -52,4 +53,5 @@ function changeGame() {
 function chooseIcon(event){
    currentGame.human.takeTurn(event)
    console.log(event.target.id)
+   currentGame.standoff()
 }
