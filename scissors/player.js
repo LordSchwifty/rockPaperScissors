@@ -20,5 +20,6 @@ class Player {
     // }
     console.log(event.target.id)
     console.log(currentGame.choices)
+    console.log(currentGame.computer.pick)
 }
 }
