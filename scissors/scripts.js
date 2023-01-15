@@ -73,7 +73,7 @@ function chooseIcon(event){
    updateScore()
    updateWinner()
    showFighters()
-   setTimeout(resetPage, 2000)
+   setTimeout(resetPage, 2800)
 }
 function updateScore() {
     computerScore.innerText = currentGame.computer.wins
