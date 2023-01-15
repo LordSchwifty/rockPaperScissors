@@ -6,16 +6,12 @@ class Player {
         this.wins = 0;
  }
  getRandom() {
-    console.log(currentGame.choices[Math.floor(Math.random() * currentGame.choices.length)]);
+    return currentGame.choices[Math.floor(Math.random() * currentGame.choices.length)];
     
-    };
+ }
  
  takeTurn(event) {
-    if(this.name === "Human") {
-        this.pick = event.target.id
-    } else if(this.name === "computer") {
-        this.pick = this.getRandom()
-    }
-    console.log(event.target.id)
-}
+    currentGame.human.pick = event.target.id
+    currentGame.computer.pick = this.getRandom()
+ }
 }

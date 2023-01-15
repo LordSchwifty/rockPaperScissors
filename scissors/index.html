@@ -8,19 +8,28 @@
   </head>
   <body>
   <aside>
-    <section class="me-player-section">Human</section>
+    <section class="me-player-section">Human 🧠</section>
      <img class="anime-icon" src="icons/pngfind.com-anime-guy-png-1692765.png"  alt="anime-guy">
     <label class="human-score">0</label>
     </aside>
     <main>
       <section class="rock-paper-scissors">Rock, Paper, Scissors</section>
-       <div class="game-board" id="game-box">
-        <img class="rock-icon hidden" id="rock" src="icons/pngfind.com-rubble-png-238696.png"  alt="rock">
-        <img class="scissors-icon hidden" id="scissors" src="icons/pngfind.com-scissors-png-562066.png"  alt="scissors">
-        <img class="paper-icon hidden" id="paper" src="icons/pngfind.com-lined-paper-png-253691.png"  alt="paper">
-        <img class="raygun-icon hidden" id="raygun" src="icons/pngfind.com-ray-gun-png-810359.png"  alt="raygun">
-        <img class="lightsaber-icon hidden" id="lightsaber" src="icons/pngfind.com-light-saber-png-170023.png"  alt="saber">
-       </div>
+       <section class="instruction-view">
+        <p class="instructions-classic">Classic Mode - Rock smashes Scissors | Paper covers Rock | Scissors cuts Paper</p>
+        <p class="instructions-difficult">Difficult Mode - Rock smashes Lightsaber, Scissors, and Raygun | Paper covers Rock and Raygun | Scissors cuts Paper | Raygun shoots LightSaber and Scissors | Lightsaber slices Paper and Scissors</p>
+       </section>
+       <section class="game-board hidden" id="game-box">
+        <img class="rock-icon hidden" id="rock" src="icons/rock.png"  alt="rock">
+        <img class="scissors-icon hidden" id="scissors" src="icons/scissors.png"  alt="scissors">
+        <img class="paper-icon hidden" id="paper" src="icons/paper.png"  alt="paper">
+        <img class="raygun-icon hidden" id="raygun" src="icons/raygun.png"  alt="raygun">
+        <img class="lightsaber-icon hidden" id="lightsaber" src="icons/lightsaber.png"  alt="saber">
+       </section>
+       <section class="results-view hidden" id="results">
+        <img class="human-pick" id="human-choice" src="icons/rock.png" alt="rock">
+        <img class="computer-pick" id="computer-choice" src="icons/paper.png" alt="rock">
+       </section>
+       <section class="selection-message" id="selection">Select Game Type</section>
        <section class="buttons">
         <button id="classic">Classic</button>
         <button id="difficult">Difficult</button>
@@ -29,14 +38,14 @@
         <button class="change-game-button hidden" id="change-game">Change Game</button>
        </section>
         <aside>
-          <section class="computer-player-section">Computer</section>
+          <section class="computer-player-section">Computer 🧟‍♂️</section>
            <img class="robot-icon" src="icons/pngfind.com-cute-robot-png-4637226.png"  alt="anime-robot">
            <label class="computer-score">0</label>
         </aside> 
      </main>
     </section>
-    <script type="text/javascript" src="game.js"></script>
-    <script type="text/javascript" src="player.js"></script>
+    <script type="text/javascript" src="Game.js"></script>
+    <script type="text/javascript" src="Player.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
