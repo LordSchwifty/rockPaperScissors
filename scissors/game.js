@@ -72,7 +72,7 @@ standoff() {
         this.human.wins += 1
     } else if(this.computer.pick === "paper" && this.human.pick === "raygun") {
         this.winner = this.computer
-        this.human.wins += 1
+        this.computer.wins += 1
     } else if(this.human.pick === "paper" && this.computer.pick === "raygun") {
         this.winner = this.human
         this.human.wins += 1

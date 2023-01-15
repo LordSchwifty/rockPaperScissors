@@ -11,7 +11,11 @@ var currentGame = new Game()
 var humanScore = document.querySelector('.human-score')
 var computerScore = document.querySelector('.computer-score')
 var selectPlayer = document.getElementById('selection')
-
+var instructionView = document.querySelector('.instruction-view')
+var gameView = document.querySelector('.game-board')
+var resultsView = document.getElementById('results')
+var humanChoice = document.getElementById('human-choice')
+var computerChoice = document.getElementById('computer-choice')
 //event listeners
 classicBtn.addEventListener('click', classicGameSelection)
 difficultBtn.addEventListener('click', difficultGameSelection)
@@ -24,15 +28,19 @@ lightsaberIcon.addEventListener('click', function() {chooseIcon(event)})
 
 //functions
 function classicGameSelection(event) {
+    gameView.classList.remove('hidden')
     changeGameBtn.classList.remove('hidden');
     scissorsIcon.classList.remove('hidden');
     rockIcon.classList.remove('hidden');
     paperIcon.classList.remove('hidden');
     classicBtn.classList.add('hidden');
     difficultBtn.classList.add('hidden');
+    instructionView.classList.add('hidden')
     currentGame.selectGameType(event);
+    selectPlayer.innerText = `Select Your Fighter`
 }
 function difficultGameSelection(event) {
+    gameView.classList.remove('hidden')
     changeGameBtn.classList.remove('hidden');
     scissorsIcon.classList.remove('hidden');
     rockIcon.classList.remove('hidden');
@@ -41,9 +49,12 @@ function difficultGameSelection(event) {
     raygunIcon.classList.remove('hidden')
     classicBtn.classList.add('hidden');
     difficultBtn.classList.add('hidden');
+    instructionView.classList.add('hidden')
     currentGame.selectGameType(event);
+    selectPlayer.innerText = `Select Your Fighter`
 }
 function changeGame() {
+    instructionView.classList.remove('hidden')
     changeGameBtn.classList.add('hidden');
     scissorsIcon.classList.add('hidden');
     rockIcon.classList.add('hidden');
@@ -52,6 +63,7 @@ function changeGame() {
     raygunIcon.classList.add('hidden')
     classicBtn.classList.remove('hidden');
     difficultBtn.classList.remove('hidden');
+    selectPlayer.innerText = `Select Game Type`
 }
 
 function chooseIcon(event){
@@ -60,6 +72,7 @@ function chooseIcon(event){
    currentGame.standoff()
    updateScore()
    updateWinner()
+   showFighters()
    setTimeout(resetPage, 2000)
 }
 function updateScore() {
@@ -76,4 +89,15 @@ function updateWinner() {
 }
 function resetPage() {
     selectPlayer.innerText = 'Select Your Fighter'
+    resultsView.classList.add('hidden')
+    gameView.classList.remove('hidden')
+    changeGameBtn.classList.remove('hidden')
+}
+
+function showFighters() {
+    gameView.classList.add('hidden')
+    resultsView.classList.remove('hidden')
+    changeGameBtn.classList.add('hidden')
+    humanChoice.src = `icons/${currentGame.human.pick}.png`
+    computerChoice.src = `icons/${currentGame.computer.pick}.png`
 }

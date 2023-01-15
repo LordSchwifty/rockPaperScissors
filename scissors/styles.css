@@ -5,7 +5,7 @@
 body {
     height: 100%;
     width: 75%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: serif;
     background-color: rgb(160, 224, 160)
 }
 
@@ -14,7 +14,7 @@ body {
     height: 100%;
     width: 24%;
     position: fixed;
-    z-index: 1;
+    /* z-index: 1; */
     top: 0;
     right: 0;
     border-left: solid;
@@ -31,7 +31,7 @@ main {
     height: 100%;
     width: 24%;
     position: fixed;
-    z-index: 1;
+    /* z-index: 1; */
     top: 0;
     left: 38%;
     display: flex;
@@ -114,37 +114,33 @@ main {
     margin-left: 301px; 
     margin-top: 38%;
     position: fixed;
-    z-index: 5;
     top: 0;
     right:175;
   }
   .rock-icon {
-    height: 170px;
-    width: 170px;
+    height: 160px;
+    width: 160px;
     margin-left: -251px; 
     margin-top: 11%;
     position: fixed;
-    z-index: 5;
     top: 0;
     right:175;
   }
   .scissors-icon {
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     margin-left: 108px; 
-    margin-top: 12%;
+    margin-top: 11%;
     position: fixed;
-    z-index: 5;
     top: 0;
     right:175;
   }
   .paper-icon {
-    height: 140px;
-    width: 140px;
-    margin-left: -59px; 
-    margin-top: 13%;
+    height: 160px;
+    width: 160px;
+    margin-left: -69px; 
+    margin-top: 11%;
     position: fixed;
-    z-index: 5;
     top: 0;
     right:175;
   }
@@ -154,17 +150,15 @@ main {
     margin-left: 16px; 
     margin-top: 28%;
     position: fixed;
-    z-index: 5;
     top: 0;
     right:175;
   }
   .lightsaber-icon {
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     margin-left: -170px; 
     margin-top: 28%;
     position: fixed;
-    z-index: 5;
     top: 0;
     right:175;
   }
@@ -173,7 +167,6 @@ main {
     margin-left: -205px; 
     margin-top: 1%;
     position: fixed;
-    z-index: 5;
     top: 0;
     font-size: 250px;
   }
@@ -183,8 +176,35 @@ main {
     margin-left: 360px; 
     margin-top: 1%;
     position: fixed;
-    z-index: 5;
     top: 0;
     font-size: 250px;
   }
 
+  .instruction-view {
+    height: 100 px;
+    width: 500px;
+ }
+
+ #selection {
+    color: rgb(72, 78, 193);
+    margin-top: 50px;
+ }
+ #human-choice {
+    height: 160px;
+    width: 160px;
+    margin-left: -170px; 
+    margin-top: 16%;
+    position: fixed;
+    top: 0;
+    right:175;
+ }
+
+ #computer-choice {
+    height: 160px;
+  width: 160px;
+  margin-left: 16px; 
+  margin-top: 16%;
+  position: fixed;
+  top: 0;
+  right:175;
+}
