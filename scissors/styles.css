@@ -1,6 +1,3 @@
-* {
-    border: 1px solid black;
-}
 .hidden {
     display: none;
 }
@@ -23,6 +20,7 @@ body {
     display: flex;
     flex-direction:column;
     font-size: 30px;    
+    align-items: center;
 }
 
 main {
@@ -43,18 +41,19 @@ main {
     height: 100%;
     width: 24%;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     border-right: solid;
     display: flex;
     flex-direction: column;
-    font-size: 30px;    
+    font-size: 30px;  
+    align-items: center;  
 }
 
   .rock-paper-scissors {
     font-size: 50px;
 }
+
   .buttons {
         border: none;
         color: white;
@@ -93,86 +92,53 @@ main {
 
   .game-board {
     height: 420px;
-    width: 420px;
-    /* background-color: rgb(147, 150, 153); */
-    margin-top: 50px;
+    width: 150%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
   }
   .anime-icon {
     height: 250px;
     width: 250px;
-    margin-bottom: 50px;
-    margin-left: 3px; 
-    margin-top: 50%;
+   
   }
   .robot-icon {
     height: 250px;
     width: 250px;
-    margin-left: 301px; 
-    margin-top: 38%;
-    position: fixed;
-    top: 0;
-    right:175;
+    
+    
   }
-  .rock-icon {
+  .rock-icon, .scissors-icon, .paper-icon {
     height: 160px;
     width: 160px;
-    margin-left: -251px; 
-    margin-top: 11%;
-    position: fixed;
-    top: 0;
-    right:175;
+    border: 4px solid black;
+    border-radius: 12px;
+   
   }
-  .scissors-icon {
-    height: 160px;
-    width: 160px;
-    margin-left: 108px; 
-    margin-top: 11%;
-    position: fixed;
-    top: 0;
-    right:175;
-  }
-  .paper-icon {
-    height: 160px;
-    width: 160px;
-    margin-left: -69px; 
-    margin-top: 11%;
-    position: fixed;
-    top: 0;
-    right:175;
-  }
+  
   .raygun-icon {
     height: 160px;
     width: 160px;
-    margin-left: 16px; 
-    margin-top: 28%;
-    position: fixed;
-    top: 0;
-    right:175;
+    margin-top: 200px;
+    margin-left: -421px;
+    border: 4px solid black;
+    border-radius: 12px;
+
   }
   .lightsaber-icon {
     height: 160px;
     width: 160px;
-    margin-left: -170px; 
-    margin-top: 28%;
-    position: fixed;
-    top: 0;
-    right:175;
-  }
+    margin-top: 200px;
+    margin-left: 0px;
+    border: 4px solid black;
+    border-radius: 12px;
+  
+  } 
 
   .human-score {
-    margin-left: -205px; 
-    margin-top: 1%;
-    position: fixed;
-    top: 0;
     font-size: 250px;
   }
   .computer-score {
-    height: 150px;
-    width: 150px;
-    margin-left: 360px; 
-    margin-top: 1%;
-    position: fixed;
-    top: 0;
     font-size: 250px;
   }
 
@@ -194,6 +160,8 @@ main {
     position: fixed;
     top: 0;
     right:175;
+    border: 4px solid black;
+    border-radius: 12px;
  }
 
  #computer-choice {
@@ -204,4 +172,6 @@ main {
    position: fixed;
    top: 0;
    right:175;
+   border: 4px solid black;
+   border-radius: 12px;
 }

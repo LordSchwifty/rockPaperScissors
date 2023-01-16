@@ -12,7 +12,7 @@ var humanScore = document.querySelector('.human-score')
 var computerScore = document.querySelector('.computer-score')
 var selectPlayer = document.getElementById('selection')
 var instructionView = document.querySelector('.instruction-view')
-var gameView = document.querySelector('.game-board')
+var gameView = document.getElementById('game-box')
 var resultsView = document.getElementById('results')
 var humanChoice = document.getElementById('human-choice')
 var computerChoice = document.getElementById('computer-choice')
@@ -90,12 +90,26 @@ function updateWinner() {
 function resetPage() {
     selectPlayer.innerText = 'Select Your Fighter'
     resultsView.classList.add('hidden')
-    gameView.classList.remove('hidden')
     changeGameBtn.classList.remove('hidden')
+    if(currentGame.type === "classic") {
+     scissorsIcon.classList.remove('hidden');
+     rockIcon.classList.remove('hidden');
+     paperIcon.classList.remove('hidden');
+  } else if(currentGame.type === 'difficult') {
+     scissorsIcon.classList.remove('hidden');
+     rockIcon.classList.remove('hidden');
+     paperIcon.classList.remove('hidden');
+     lightsaberIcon.classList.remove('hidden')
+     raygunIcon.classList.remove('hidden')
+  }
 }
 
 function showFighters() {
-    gameView.classList.add('hidden')
+    scissorsIcon.classList.add('hidden');
+    rockIcon.classList.add('hidden');
+    paperIcon.classList.add('hidden');
+    lightsaberIcon.classList.add('hidden')
+    raygunIcon.classList.add('hidden')
     resultsView.classList.remove('hidden')
     changeGameBtn.classList.add('hidden')
     humanChoice.src = `icons/${currentGame.human.pick}.png`
