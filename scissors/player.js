@@ -1,13 +1,12 @@
 class Player {
     constructor(name, token, pick) {
-        this.name = name;
-        this.token = token;
-        this.pick = pick;
-        this.wins = 0;
+        this.name = name
+        this.token = token
+        this.pick = pick
+        this.wins = 0
  }
  getRandom() {
-    return currentGame.choices[Math.floor(Math.random() * currentGame.choices.length)];
-    
+    return currentGame.choices[Math.floor(Math.random() * currentGame.choices.length)]
  }
  
  takeTurn(event) {

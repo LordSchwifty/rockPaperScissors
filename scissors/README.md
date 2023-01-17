@@ -1,3 +1,5 @@
+# Rock, Paper, Scissors
+
 ## Overview
 - This app features a game of Rock, Paper, Scissors. There are 2 modes...the classic version and the difficult version to choose from. The game is anime themed and uses a combination of javascript, css, and html. 
 
@@ -23,3 +25,4 @@
 
 ## Contributors
 - [Tom Doder](https://www.linkedin.com/in/tom-doder/)
+

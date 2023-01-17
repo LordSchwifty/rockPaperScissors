@@ -16,6 +16,7 @@ var gameView = document.getElementById('game-box')
 var resultsView = document.getElementById('results')
 var humanChoice = document.getElementById('human-choice')
 var computerChoice = document.getElementById('computer-choice')
+
 //event listeners
 classicBtn.addEventListener('click', classicGameSelection)
 difficultBtn.addEventListener('click', difficultGameSelection)
@@ -39,6 +40,7 @@ function classicGameSelection(event) {
     currentGame.selectGameType(event);
     selectPlayer.innerText = `Select Your Fighter`
 }
+
 function difficultGameSelection(event) {
     gameView.classList.remove('hidden')
     changeGameBtn.classList.remove('hidden');
@@ -53,6 +55,7 @@ function difficultGameSelection(event) {
     currentGame.selectGameType(event);
     selectPlayer.innerText = `Select Your Fighter`
 }
+
 function changeGame() {
     instructionView.classList.remove('hidden')
     changeGameBtn.classList.add('hidden');
@@ -75,6 +78,7 @@ function chooseIcon(event){
    showFighters()
    setTimeout(resetPage, 2800)
 }
+
 function updateScore() {
     computerScore.innerText = currentGame.computer.wins
     humanScore.innerText = currentGame.human.wins
