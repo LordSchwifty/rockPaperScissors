@@ -42,7 +42,6 @@ function classicGameSelection(event) {
 }
 
 function difficultGameSelection(event) {
-    gameView.classList.remove('hidden')
     changeGameBtn.classList.remove('hidden');
     scissorsIcon.classList.remove('hidden');
     rockIcon.classList.remove('hidden');
