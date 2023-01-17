@@ -6,6 +6,7 @@ class Game {
         this.choices = []
         this.winner = undefined
 }
+
 selectGameType(event) {
     if(event.target.id === "classic") {
         this.type = "classic"
@@ -15,6 +16,7 @@ selectGameType(event) {
         this.choices = ["rock", "paper", "scissors", "raygun", "lightsaber"]
     }
 }
+
 standoff() {
     if(this.human.pick === "rock" && this.computer.pick === "scissors") {
         this.winner = this.human
@@ -85,6 +87,5 @@ standoff() {
     } else if(this.computer.pick === this.human.pick) {
         this.winner = "draw"
     }
-
-}
+ }
 }
